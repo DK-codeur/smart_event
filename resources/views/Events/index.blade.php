@@ -14,6 +14,7 @@
         {{ $events->links() }}
 
     @else
+        {{-- events.index (ressource.action) car utilise Ressource Controller --}}
         <a href="{{ route('events.index') }}" class="btn btn-secondary btn-sm"> < Back</a>
         <p>Aucun Evenements pour le moment</p>
     @endif
